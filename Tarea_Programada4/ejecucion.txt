@@ -1,0 +1,198 @@
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 2
+
+Piezas disponibles: Torre, Alfil, Caballo, Reina, Rey, Peón
+Ingresa el nombre de la pieza: Caballo
+
+Posición actual de la pieza:
+
+Ingresa la posición de la pieza:
+  Columna (a-h): b
+  Fila (1-8): 1
+
+Casilla destino a verificar:
+
+Ingresa la posición de la pieza:
+  Columna (a-h): c
+  Fila (1-8): 3
+
+============================================================
+VERIFICACIÓN DE MOVIMIENTO
+============================================================
+Pieza: Caballo
+Posición actual: b1
+Casilla destino: c3
+============================================================
+
+✅ EL MOVIMIENTO ES POSIBLE
+
+------------------------------------------------------------
+MENÚ PRINCIPAL
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 2
+
+Piezas disponibles: Torre, Alfil, Caballo, Reina, Rey, Peón
+Ingresa el nombre de la pieza: Rey
+
+Posición actual de la pieza:
+
+Ingresa la posición de la pieza:
+  Columna (a-h): e
+  Fila (1-8): 1
+
+Casilla destino a verificar:
+
+Ingresa la posición de la pieza:
+  Columna (a-h): e
+  Fila (1-8): 8
+
+============================================================
+VERIFICACIÓN DE MOVIMIENTO
+============================================================
+Pieza: Rey
+Posición actual: e1
+Casilla destino: e8
+============================================================
+
+❌ EL MOVIMIENTO NO ES POSIBLE
+
+------------------------------------------------------------
+MENÚ PRINCIPAL
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 1
+
+Piezas disponibles: Torre, Alfil, Caballo, Reina, Rey, Peón
+Ingresa el nombre de la pieza: Reina
+
+Ingresa la posición de la pieza:
+  Columna (a-h): d
+  Fila (1-8): 4
+
+============================================================
+MOVIMIENTOS POSIBLES PARA REINA
+Posición actual: d4
+============================================================
+
+Total de movimientos: 27
+
+Casillas donde se puede mover:
+  d1  d2  d3  d5  d6
+  d7  d8  a4  b4  c4
+  e4  f4  g4  h4  e5
+  f6  g7  h8  e3  f2
+  g1  c3  b2  a1  c5
+  b6  a7
+
+------------------------------------------------------------
+MENÚ PRINCIPAL
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 1
+
+Piezas disponibles: Torre, Alfil, Caballo, Reina, Rey, Peón
+Ingresa el nombre de la pieza: Peón
+
+Ingresa la posición de la pieza:
+  Columna (a-h): e
+  Fila (1-8): 2
+
+Color del peón (blanco/negro): blanco
+
+============================================================
+MOVIMIENTOS POSIBLES PARA PEÓN
+Posición actual: e2
+============================================================
+
+Total de movimientos: 2
+
+Casillas donde se puede mover:
+  e3  e4
+
+------------------------------------------------------------
+MENÚ PRINCIPAL
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 1
+
+Piezas disponibles: Torre, Alfil, Caballo, Reina, Rey, Peón
+Ingresa el nombre de la pieza: Dragon
+
+❌ ERROR: Pieza 'dragon' no reconocida. Válidas: torre, alfil, caballo, reina, rey, peon
+
+------------------------------------------------------------
+MENÚ PRINCIPAL
+------------------------------------------------------------
+1. Consultar movimientos posibles de una pieza
+2. Verificar si un movimiento es posible
+3. Salir
+------------------------------------------------------------
+Selecciona una opción (1-3): 3
+
+============================================================
+     ¡Gracias por usar el sistema de ajedrez!
+============================================================
+
+
+================================================================================
+           CASOS DE PRUEBA ADICIONALES
+================================================================================
+
+CASO: Validación de columna inválida
+-------------------------------------
+Columna (a-h): z
+
+❌ ERROR: La columna debe estar entre 'a' y 'h'
+
+
+CASO: Validación de fila inválida
+----------------------------------
+Fila (1-8): 9
+
+❌ ERROR: La fila debe estar entre 1 y 8
+
+
+CASO: Validación de entrada no numérica
+----------------------------------------
+Fila (1-8): abc
+
+❌ ERROR: La fila debe ser un número
+
+
+CASO: Alfil en esquina (c1)
+----------------------------
+Pieza: Alfil
+Posición: c1
+Movimientos: 7 casillas (diagonales)
+Ejemplos: d2, e3, f4, g5, h6, b2, a3
+
+
+CASO: Caballo en esquina (a1)
+------------------------------
+Pieza: Caballo
+Posición: a1
+Movimientos: 2 casillas (b3, c2)
+
+
+CASO: Rey en centro (d4)
+------------------------
+Pieza: Rey
+Posición: d4
+Movimientos: 8 casillas (todas las adyacentes)
